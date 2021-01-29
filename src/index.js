@@ -7,6 +7,6 @@ exports.max = function max(array) {
   return array === undefined || array.length === 0 ? 0 : array.reduce((maxNum, currentNum) => maxNum > currentNum ? maxNum : currentNum);
 }
 
-exports.avg = function avg (array) {
-  return 0;
+exports.avg = function avg(array) {
+  return array === undefined || array.length === 0 ? 0 : array.reduce((sum, currentNum) => sum + currentNum, 0) / array.length;
 }
